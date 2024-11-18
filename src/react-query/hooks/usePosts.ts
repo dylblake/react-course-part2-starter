@@ -26,6 +26,7 @@ const usePosts = (query: PostQuery) => {
         })
         .then((res) => res.data),
     staleTime: 1 * 1000, //1m
+    keepPreviousData: true,
   });
 };
 
